@@ -1,0 +1,48 @@
+
+Types of variables in JS: var, let, const. 
+
+
+
+Variables:- 
+	1. Case-sensitive
+	2. start with letters, _(under score), $(dollar)
+	3. cannot start with numbers
+	4. Reserved(key) words are not allowed
+	5. Allow letters, numbers, underscore, dollar
+	a. Reassigning variables with var is accepted
+	b. Reassigning with let is accepted
+	c. Reassigning with const is not accepted
+	i. Redeclaring with var is accepted
+	ii. redeclaring with let is not accepted
+	iii. Redeclaring with const is not accepted
+
+Block Scope:
+	1. Variables declared with var do not have block scope
+	2. Variables declared with let have block scope
+
+
+
+code:
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Basic</title>
+    </head>
+    <body>
+        <script>
+            //var name = "Dwijasri"
+            //console.log(name)
+            //document.write(name)
+            let a=1
+            a=2
+            {
+                let a=5
+                a=a+2
+                console.log(a+a)
+                
+            }
+            console.log(a+a)
+            
+        </script>
+    </body>
+</html>
